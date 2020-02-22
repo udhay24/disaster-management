@@ -47,6 +47,8 @@
         android:layout_marginStart="15dp"
         android:hint="Mobile"
         android:padding="10dp"
+        android:maxLength="10"
+        android:inputType="phone"
         android:id="@+id/number"
         android:background="@drawable/round_mehroon"
         android:layout_marginEnd="15dp"
