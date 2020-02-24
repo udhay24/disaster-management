@@ -1,10 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:id="@+id/top"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+            <RelativeLayout
+                android:elevation="3dp"
+                android:id="@+id/medicine"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_mehroon"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:padding="7dp"
+                    android:id="@+id/medical_icon"
+                    android:tint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_medical"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_below="@id/medical_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Medicines"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:elevation="3dp"
+                android:id="@+id/food"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_mehroon"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:padding="7dp"
+                    android:id="@+id/food_icon"
+                    android:tint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_food"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_below="@id/food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:elevation="3dp"
+                android:id="@+id/volunteer"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_mehroon"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:padding="3dp"
+                    android:id="@+id/volunteer_icon"
+                    android:tint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_help"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_below="@id/volunteer_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Volunteer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:elevation="3dp"
+                android:id="@+id/emergency"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_mehroon"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/emergency_icon"
+                    android:tint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_police"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_below="@id/emergency_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
